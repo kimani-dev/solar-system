@@ -1,10 +1,10 @@
 package sim.solar.planet;
 
-import java.util.ArrayList; 
+import java.util.List;
 
 public interface  NurseryInterface {
 
-    public ArrayList<PlanetInterface> Produce () ;
-    public String GetAuthor ()  ;   
-    public String GetTitle () ;    
+    List <PlanetInterface> Produce () ;
+    String GetAuthor ()  ;
+    String GetTitle () ;
 }

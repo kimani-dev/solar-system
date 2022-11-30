@@ -1,5 +1,7 @@
-package sim.solar; 
-import sim.solar.planet.*; 
+package sim.solar;
+
+import sim.solar.planet.Exhibit;
+import sim.solar.planet.NurseryInterface;
 
 import java.awt.Graphics;
 import java.awt.Color;
@@ -21,7 +23,7 @@ class Simulation extends JPanel implements Runnable {
    private int cycleCount = 1;       // must start at one
    private int nurseryCounter = 1;   // must start at one
    
-   private Exhibit exhibit  = new Exhibit();
+   private final Exhibit exhibit  = new Exhibit();
    private NurseryInterface nursery ;  
    private SolarSystem solarSystem  ;
 

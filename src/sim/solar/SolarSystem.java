@@ -1,16 +1,18 @@
-package sim.solar; 
-import sim.solar.planet.*; 
+package sim.solar;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.util.ArrayList; 
+import sim.solar.planet.NurseryInterface;
+import sim.solar.planet.PlanetInterface;
+import sim.solar.planet.PlanetView;
+
+import java.awt.*;
+import java.util.List;
 
 class SolarSystem   {
    private final static Color textColor = new Color(60, 120, 200);
-   private ArrayList<PlanetInterface> planetList = new ArrayList<>();
-   private PlanetView planetView = new PlanetView();;
+   private final List<PlanetInterface> planetList;
+   private final PlanetView planetView = new PlanetView();
    NurseryInterface nursery;
-   int centerPosition; 
+   int centerPosition;
    
    public SolarSystem(int screenSize, NurseryInterface nextNursery) {  
       centerPosition = screenSize/2; 
